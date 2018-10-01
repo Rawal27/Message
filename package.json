@@ -1,0 +1,24 @@
+{
+  "name": "sms-otp",
+  "version": "1.0.0",
+  "description": "Sending OTP sms to our contacts",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "author": "Kamal Rawal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.17",
+    "twilio": "^3.21.0"
+  }
+}
