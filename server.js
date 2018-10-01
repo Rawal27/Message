@@ -38,7 +38,7 @@ mongoose.connect(dbConfig.url, {
 //route
 app.get('/', (req, res) => {
    //res.json({"message": "Hello Kitty!!"});
-   res.render('index');
+   res.render('list');
 });
 
 
