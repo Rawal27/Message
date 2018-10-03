@@ -6,12 +6,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<h2 class="text-center">Contact</h2> 
+   <div class="container">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4">
+     <h2 class="text-center">Contact</h2> 
     
-      <p class><%= contact.first %> <%= contact.last %></p>
-      <p><%= contact.phone %></p>
-    
+      <p class="text-center"><%= contact.first %> <%= contact.last %></p>
+      <p class="text-center"><%= contact.phone %></p>
+    <div class="text-center">
     <a href="/list/<%=contact.id%>/compose">Send Message</a>    
+    </div>
+  </div>
+ </div>
+</div>
 </body>
 </html>    
  
