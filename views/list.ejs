@@ -38,21 +38,21 @@ tr td a {font-size:1em;padding:1em;}
 </div>
 
 <div id="secondTab" class="tabcontent">
- <table>
-  <tr>
-    <th>Name of Contact</th>
-    <th>Created At</th>
-    <th>OTP</th>
+ <table class="container">
+  <tr class="row">
+    <th class="col-md-4 text-center">Name of Contact</th>
+    <th class="col-md-4 text-center">Created At</th>
+    <th class="col-md-4 text-center">OTP</th>
   </tr>
     <% for(var i=inputs.length-1;i>=0;i--) { %>
-        <tr>
-          <td>
+        <tr class="row">
+          <td class="col-md-4 text-center">
             <%=inputs[i].firstName %>-<%=inputs[i].lastName%>
           </td>
-          <td>
+          <td class="col-md-4 text-center">
             <%=inputs[i].createdAt%>
           </td>
-          <td>
+          <td class="col-md-4 text-center">
             <%=inputs[i].otp%>
           </td>
         </tr>
