@@ -4,22 +4,22 @@
 <title></title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<body class="container">
+<body>
 
 <div class="tab text-center">
   <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'firstTab')">Tab-One</button>
   <button class="tablinks" onclick="openTab(event, 'secondTab')">Tab-Two</button>
 </div>
 
-<div id="firstTab" class="tabcontent">
-  <h2 class="text-center">List of Contacts</h2>
+<div id="firstTab" class="tabcontent container">
+  <h2 class="text-center row">List of Contacts</h2>
 
-<table>
-  <tr>
+<table class="row">
+  <tr class="col-md-offset-4 col-md-4">
     <th>Name of the contact</th>
   </tr>
     <% contacts.forEach(function(contact) { %>
-        <tr>
+        <tr class="col-md-offset-4 col-md-4">
           <td>
             <a href="/list/<%=contact.id%>"><%=contact.first %> <%= contact.last %></a>
           </td>
