@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
  
-#firstTab .row .col-md-4 a {font-size:1.3em;color:#fff;}
-#firstTab .row .col-md-4 {background:cornflowerblue;padding:1em;margin-bottom:1em;}
-.col-md-4 a:hover{text-decoration:none;}
+#firstTab .row .col-md-6 a {font-size:1.3em;color:#fff;}
+#firstTab .row .col-md-6 {background:cornflowerblue;padding:1em;margin-bottom:1em;}
+.col-md-6 a:hover{text-decoration:none;}
 </style>
 
 
@@ -25,7 +25,7 @@
 <div class="row">
     <div class="col-md-12 text-center"><h3>List of Contacts</h3></div>
     <% contacts.forEach(function(contact) { %>
-          <div class="col-md-offset-4 col-md-4 text-center">
+          <div class="col-md-offset-3 col-md-6 text-center">
             <a href="/list/<%=contact.id%>"><%=contact.first %> <%= contact.last %></a>
           </div>
     <% }); %>
