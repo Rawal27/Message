@@ -12,14 +12,14 @@
 </div>
 
 <div id="firstTab" class="tabcontent container">
-  <h2 class="text-center row">List of Contacts</h2>
+  <h2 class="text-center">List of Contacts</h2>
 
-<table class="row">
-  <tr class="col-md-offset-5 col-md-4">
+<table class="">
+  <tr class="text-center">
     <th>Name of the contact</th>
   </tr>
     <% contacts.forEach(function(contact) { %>
-        <tr class="col-md-offset-5 col-md-4 text-center">
+        <tr class="text-center">
           <td>
             <a href="/list/<%=contact.id%>"><%=contact.first %> <%= contact.last %></a>
           </td>
