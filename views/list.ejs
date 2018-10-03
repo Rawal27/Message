@@ -25,8 +25,8 @@
     <th class="col-md-12 text-center">Name of the contact</th>
   </tr>
     <% contacts.forEach(function(contact) { %>
-        <tr class="col-md-offset-5">
-          <td class="text-center">
+        <tr class="row">
+          <td class="col-md-12 text-center">
             <a href="/list/<%=contact.id%>"><%=contact.first %> <%= contact.last %></a>
           </td>
         </tr>
