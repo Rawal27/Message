@@ -22,20 +22,14 @@ tr.row {height:2em;}
 </div>
 
 <div id="firstTab" class="tabcontent container">
-
-<table class="row">
-  <tr class="col-md-12">
-    <th class="col-md-12 text-center"><h3>List of Contacts</h3></th>
-  </tr>
+<div class="row">
+    <div class="col-md-12 text-center"><h3>List of Contacts</h3></div>
     <% contacts.forEach(function(contact) { %>
-        <tr class="col-md-12">
-          <td class="col-md-offset-4 col-md-4 text-center">
+          <div class="col-md-12 text-center">
             <a href="/list/<%=contact.id%>"><%=contact.first %> <%= contact.last %></a>
-          </td>
-        </tr>
+          </div>
     <% }); %>
-</table>
-
+    </div>
 </div>
 
 <div id="secondTab" class="tabcontent">
