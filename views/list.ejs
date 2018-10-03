@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
  body {  background:#e6ecf0;}
- td a {font-size:1em;padding:1em;}
+tr td a {font-size:1em;padding:1em;}
 </style>
 
 
@@ -28,7 +28,7 @@
   </tr>
     <% contacts.forEach(function(contact) { %>
         <tr class="row">
-          <td class="col-md-12 text-center">
+          <td class="col-md-offset-4 col-md-4 text-center">
             <a href="/list/<%=contact.id%>"><%=contact.first %> <%= contact.last %></a>
           </td>
         </tr>
