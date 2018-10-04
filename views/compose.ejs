@@ -1,7 +1,33 @@
+CTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ .text-center input[type="submit"] {text-decoration: none;
+    border: 1px solid #1da1f2;
+    background: #1da1f2;
+    color: #fff;
+    padding: 0.4em;
+    border-radius: 2em;
+    margin: 0em;
+    font-size:1.3em;
+}
+.text-center input[type="submit"]:hover {background:#006dbf;}
 
+</style>
+</head>
 
-
+<body>
 <form action="/list/<%=id%>/compose/send/<%=otp%>">
-  <input type="text" name="message" value="Hi. Your OTP is: <%=`${otp}`%>"></br></br>
+  <div class="text-center">
+    <input type="text" name="message" value="Hi. Your OTP is: <%=`${otp}`%>"></br></br>
+  </div>
+ <div class="text-center"> 
   <input type="submit" value="Send">
+ </div>
 </form>
+</body>
+</html>
+
